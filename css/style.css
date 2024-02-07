@@ -1,0 +1,16 @@
+body{
+background-color: #e8ffff;
+}
+
+
+input {
+  width: 50%;
+}
+
+th {
+ width: 100px;
+}
+
+table .segundo {
+  margin-left: 10px;
+}
