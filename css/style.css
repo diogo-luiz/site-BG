@@ -9,6 +9,7 @@ input {
 
 table {
   border-collapse: collapse;
+  margin-left: 10px;
 }
 th {
  width: 100px;
