@@ -7,10 +7,29 @@ input {
   width: 50%;
 }
 
+table {
+  border-collapse: collapse;
+}
 th {
  width: 100px;
 }
 
-table .segundo {
-  margin-left: 10px;
+td {
+  width: 100px;
+}
+
+input {
+  border: none;
+}
+table .jogador1 {
+  width: 100px;
+}
+table .jogador2 {
+  width: 100px;
+}
+table .jogador3 {
+  width: 100px;
+}
+table .jogador4 {
+  width: 100px;
 }
