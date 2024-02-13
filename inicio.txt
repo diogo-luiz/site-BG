@@ -21,10 +21,10 @@
       </tr>
       <tr>
         <th>1</th>
-        <td><input type="number" id="entrada"/></td>
-        <td ></td>
-        <td>0</td>
-        <td>0</td>
+        <td id="valor1"><input type="number" id="entrada"/></td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
         <th>2</th>
@@ -120,11 +120,14 @@
   </table>
   <button onclick="calcular()">Calcular</button>
 
+  <!-- Formulário para enviar os dados para a tabela -->
 
   <p id="resultado"></p>
 
   <script>
     function calcular() {
+    var umInput = document.getElementById("entrada").value;
+    document.getElementById("valor1").textContent = umInput;
     var cells = document.querySelectorAll("#minhatabela tr:not(:first-child):not(:last-child) td:nth-child(2)");
     var cells2 = document.querySelectorAll("#minhatabela tr:not(:first-child):not(:last-child) td:nth-child(3)");
     var cells3 = document.querySelectorAll("#minhatabela tr:not(:first-child):not(:last-child) td:nth-child(4)");
