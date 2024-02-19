@@ -15,12 +15,16 @@ class Estudante(db.Model):
         self.nome = nome
         self.idade = idade
 
-
-
 @app.route('/')
 def index():
     estudantes = Estudante.query.all()
     return render_template('index.html', estudantes=estudantes)
+
+@app.route('/add', methods=['GET', 'POST'])
+def add():
+    if request.method == 'POST':
+        return redirect(url_for('index.html'))
+    return render_template('add.html')
 
 
 if __name__ == '__main__':
