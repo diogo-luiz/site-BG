@@ -11,7 +11,7 @@ class Estudante(db.Model):
     nome = db.Column(db.String(150))
     idade = db.Column(db.Integer)
 
-    def __init__(self):
+    def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
 
@@ -23,9 +23,29 @@ def index():
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     if request.method == 'POST':
-        return redirect(url_for('index.html'))
+        estudante = Estudante(request.form['nome'], request.form['idade'])
+        db.session.add(estudante)
+        db.session.commit()
+        return redirect(url_for('index'))
     return render_template('add.html')
 
+@app.route('/delete/<int:id>')
+def delete(id):
+    estudante = Estudante.query.get(id)
+    db.session.delete(estudante)
+    db.session.commit()
+    return redirect(url_for('index'))
+
+@app.route('/edit/<int:id>', methods=['GET', 'POST'])
+def edit(id):
+    estudante = Estudante.query.get(id)
+    if request.method == 'POST':
+        estudante.nome = request.form['nome']
+        estudante.idade = request.form['idade']
+        db.session.commit()
+
+        return redirect(url_for('index'))
+    return render_template('edit.html', estudante=estudante)
 
 if __name__ == '__main__':
     db.create_all()
