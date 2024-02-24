@@ -1,0 +1,36 @@
+html { color-scheme: dark;}
+body{
+  color: #eee;
+  line-height: 1.5;
+
+}
+#titulo {
+  color:rgb(16, 102, 73);
+  font-family: "Zilla Slab", serif;
+}
+
+input {
+  width: 70px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+table {
+  background-color: white;
+  color: black;
+}
+
+th {
+  width: 65px;
+  text-align: center;
+}
+#j1, #j2, #j3, #j4 {
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+}
+

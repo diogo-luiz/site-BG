@@ -4,111 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>General</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('statis', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
     
 </head>
 <body >
-  <h1>Hello World!</h1>
+  <h1 id="titulo">Tabela General</h1>
   <p>Paragrafo<p>
-  <table id="minhatabela" border="1">
+  <table id="minhatabela">
       <tr>
-        <th>Jogadas</th>
-        <td>Jogador 1</td>
-        <td>Jogador 2</td>
-        <td>Jogador 3</td>
-        <td>Jogador 4</td>
+        <th id="tabelaPrincipal">Jogadas</th>
+        <td id="j1">Jogador 1</td>
+        <td id="j2">Jogador 2</td>
+        <td id="j3">Jogador 3</td>
+        <td id="j4">Jogador 4</td>
       </tr>
       <tr>
         <th>1</th>
-        <td id="a1"><input id="meuInput"></td>
-        <td id="b1"></td>
-        <td id="c1"></td>
-        <td id="d1"></td>
+        <td id="a1"><input id="IA1"></td>
+        <td id="b1"><input id="IB1"></td>
+        <td id="c1"><input id="IC1"></td>
+        <td id="d1"><input id="ID1"></td>
       </tr>
       <tr>
         <th>2</th>
-        <td id="a2">0</td>
-        <td id="b2">2</td>
-        <td id="c2">0</td>
-        <td id="d2">0</td>
+        <td id="a2"><input id="IA2"></td>
+        <td id="b2"><input id="IB2"></td>
+        <td id="c2"><input id="IC2"></td>
+        <td id="d2"><input id="ID2"></td>
       </tr>
       <tr>
         <th>3</th>
-        <td id="a3">0</td>
-        <td id="b3">0</td>
-        <td id="c3">0</td>
-        <td id="d3">0</td>
+        <td id="a3"><input id="IA3"></td>
+        <td id="b3"><input id="IB3"></td>
+        <td id="c3"><input id="IC3"></td>
+        <td id="d3"><input id="ID3"></td>
       </tr>
       <tr>
         <th>4</th>
-        <td id="a4">0</td>
-        <td id="b4">0</td>
-        <td id="c4">0</td>
-        <td id="d4">0</td>
+        <td id="a4"><input id="IA4"></td>
+        <td id="b4"><input id="IB4"></td>
+        <td id="c4"><input id="IC4"></td>
+        <td id="d4"><input id="ID4"></td>
       </tr>
       <tr>
         <th>5</th>
-        <td id="a5">0</td>
-        <td id="b5">0</td>
-        <td id="c5">0</td>
-        <td id="d5">0</td>
+        <td id="a5"><input id="IA5"></td>
+        <td id="b5"><input id="IB5"></td>
+        <td id="c5"><input id="IC5"></td>
+        <td id="d5"><input id="ID5"></td>
       </tr>
       <tr>
         <th>6</th>
-        <td id="a6">0</td>
-        <td id="b6">0</td>
-        <td id="c6">0</td>
-        <td id="d6">0</td>
+        <td id="a6"><input id="IA6"></td>
+        <td id="b6"><input id="IB6"></td>
+        <td id="c6"><input id="IC6"></td>
+        <td id="d6"><input id="ID6"></td>
       </tr>
       <tr>
         <th>T</th>
-        <td id="a7">0</td>
-        <td id="b7">0</td>
-        <td id="c7">0</td>
-        <td id="d7">0</td>
+        <td id="a7"><input id="IA7"></td>
+        <td id="b7"><input id="IB7"></td>
+        <td id="c7"><input id="IC7"></td>
+        <td id="d7"><input id="ID7"></td>
       </tr>
       <tr>
         <th>Q</th>
-        <td id="a8">0</td>
-        <td id="b8">0</td>
-        <td id="c8">0</td>
-        <td id="d8">0</td>
+        <td id="a8"><input id="IA8"></td>
+        <td id="b8"><input id="IB8"></td>
+        <td id="c8"><input id="IC8"></td>
+        <td id="d8"><input id="ID8"></td>
       </tr>
       <tr>
         <th>F</th>
-        <td id="a9">1</td>
-        <td id="b9">0</td>
-        <td id="c9">0</td>
-        <td id="d9">0</td>
+        <td id="a9"><input id="IA9"></td>
+        <td id="b9"><input id="IB9"></td>
+        <td id="c9"><input id="IC9"></td>
+        <td id="d9"><input id="ID9"></td>
       </tr>
       <tr>
         <th>S+</th>
-        <td id="a10">2</td>
-        <td id="b10">0</td>
-        <td id="c10">0</td>
-        <td id="d10">0</td>
+        <td id="a10"><input id="IA10"></td>
+        <td id="b10"><input id="IB10"></td>
+        <td id="c10"><input id="IC10"></td>
+        <td id="d10"><input id="ID10"></td>
       </tr>
       <tr>
         <th>S-</th>
-        <td id="a11">0</td>
-        <td id="b11">0</td>
-        <td id="c11">0</td>
-        <td id="d11">0</td>
+        <td id="a11"><input id="IA11"></td>
+        <td id="b11"><input id="IB11"></td>
+        <td id="c11"><input id="IC11"></td>
+        <td id="d11"><input id="ID11"></td>
       </tr>
       <tr>
         <th>G</th>
-        <td id="a12">0</td>
-        <td id="b12">0</td>
-        <td id="c12">4</td>
-        <td id="d12">2</td>
+        <td id="a12"><input id="IA12"></td>
+        <td id="b12"><input id="IB12"></td>
+        <td id="c12"><input id="IC12"></td>
+        <td id="d12"><input id="ID12"></td>
       </tr>
       <tr>
         <th>X</th>
-        <td id="a13">0</td>
-        <td id="b13">0</td>
-        <td id="c13">1</td>
-        <td id="d13">1</td>
+        <td id="a13"><input id="IA13"></td>
+        <td id="b13"><input id="IB13"></td>
+        <td id="c13"><input id="IC13"></td>
+        <td id="d13"><input id="ID13"></td>
       </tr>
       <tr>
         <th>Total</th>
