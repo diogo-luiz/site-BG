@@ -1,0 +1,66 @@
+html { color-scheme: dark;}
+body{
+  color: #eee;
+  line-height: 1.5;
+
+}
+#titulo {
+  color:rgb(12, 156, 108);
+  font-family: "Zilla Slab", serif;
+}
+
+input {
+  width: 70px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+#minhatabela {
+  border-collapse: collapse;
+  padding-right: 10px;
+  display: block;
+}
+
+#minhatabela thead {
+  background-color: #ee2828;
+}
+
+#minhatabela thead tr th{
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: #FFFFFF;
+  opacity: 1;
+  padding: 3px;
+  vertical-align:middle;
+  border: 1px solid #dee2e685;
+}
+
+#minhatabela tbody tr td {
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: #f1f1f1;
+  background-color: #3c3f44;
+  padding: 3px;
+  text-align: center;
+  border: 1px solid #dee2e685;
+}
+
+.btn { 
+  width: 70px;
+  text-decoration: none;
+  line-height: 15px;
+  display: inline-block;
+  font-weight: medium;
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid middle;
+  font-size: 14px;
+  opacity: 1;
+}
+
